@@ -1,0 +1,481 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+} */
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+  }
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url(images/kdot.jpg);
+  transition: all 2s;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+#main {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  overflow: hidden;
+}
+#box1 {
+  width: 530px;
+  height: 645px;
+  background-image: url(images/fire.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: -100%;
+  left: 30%;
+  animation: anim3 2s forwards, moves 3s forwards 3s;
+}
+#box1::after {
+  content: "";
+  position: absolute;
+  width: 530px;
+  /* height: 645px; */
+  height: 100%;
+  background-image:url(images/Mr.Morale.jpg);
+  background-color: burlywood;
+  background-repeat: 
+  no-repeat;
+  left: 0;
+  z-index: -1;
+}
+@keyframes anim3 {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
+@keyframes moves {
+  from {
+    left: 30%;
+    width: 530px;
+  }
+  to {
+    width: 0;
+    left:  50%;
+  }
+}
+#box2 {
+  width: auto;
+  height: auto;
+  color:brown;
+  font-weight: 600;
+  font-size: 4.5em;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  overflow: hidden;
+}
+#text {
+  position: relative;
+  left: -100%;
+  animation: ani 2s forwards 3s;
+}
+@keyframes ani {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+span {
+  color: rgb(0, 0, 0);
+}
+
+#box3 {
+  overflow: hidden;
+}
+#container {
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  animation: ani2 2s forwards 2.5s;
+}
+@keyframes ani2 {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+#logo {
+  float: left;
+  margin-left: 40px;
+  max-height: 40px;
+  color: blanchedalmond;
+}
+/* #logo img {
+  width: 50px;
+} */
+#nav {
+  margin-top: -30px;
+  margin-right: 60px;
+  float: right;
+}
+#nav a {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 2px;
+}
+#nav ul {
+  list-style: none;
+}
+ #nav ul li a:active {
+  color: rgb(255, 255, 255);
+}
+#nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+#nav ul li {
+  transition: all 2s;
+  display: inline-block;
+  margin-left: 80px;
+}
+.checkbtn {
+  cursor: pointer;
+}
+.checkbtn img {
+   display: inline;
+   filter: drop-shadow(0 0 1px #fff)
+}
+#check {
+  display: none;
+}
+.wrapper {
+  padding: 3vw;
+  padding-bottom: 0;
+}
+.heading {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px -2px 2px rgba(0, 0, 0, .4),
+            -2px -2px 2px rgba(255, 255, 255, 1);
+}
+
+#about {
+  position: relative;
+  height: 135vh;
+  top: 775px;
+  margin: 0;
+  background-image: url("images/kendrick.jpg");
+
+}
+
+.trees-img{
+  position: relative;
+  display: flex;
+  padding-top: 40px;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.coldplay-img img, .coldplay-img2 img {
+  width: 450px;
+  position: relative;
+  box-shadow: 2px 9px 10px 5px rgba(0, 0, 0, 0.74);
+}
+#about a, #albums a
+{
+  text-decoration: underline;
+  color: #6c6c6c;
+}
+
+#about a:hover, #albums a:hover {
+  color: burlywood;
+}
+#about a:active, #albums a:active {
+  color: rgb(126, 153, 3);
+}
+#Diss-Info {
+  position: relative;
+  top: 620px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: burlywood;
+}
+
+.fab{
+    width: 80px;
+    padding: 30px;
+    color: burlywood;
+}
+
+.alb-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.alb-img img{
+  width: 420px;
+  box-shadow: 2px 9px 10px 5px rgba(0, 0, 0, 0.74);
+}
+#songs {
+  position: relative;
+  top: 620px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:burlywood;
+}
+.music-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+background-image: url("images/kendrick.jpg");
+
+  border-radius: 55px;
+  padding: 5px 20px;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  box-shadow: 2px 8px 12px 0px rgba(0, 0, 0, 0.541);
+}
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container img {
+  width: inherit;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  box-shadow: 2px 9px 12px 7px rgba(0, 0, 0, 0.74);
+}
+#streaming {
+  position: relative;
+  top: 610px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.stream-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.stream-icons img {
+  padding: 10px 20px;
+  width: 30px;
+  filter: drop-shadow(9px 4px 4px rgb(0, 0, 0));
+}
+.stream-img img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 90px;
+  filter: drop-shadow(10px 4px 4px rgb(0, 0, 0));
+}
+footer a {
+  color: rgb(1, 133, 23);
+}
+
+/* Responsiveness!!! */
+/* Media Queries */
+@media (max-width: 1210px) {
+  #box1 {
+  left: 20%;
+  bottom: -100%;
+  animation: anim3 3s forwards, moves 3s forwards 3s;
+}
+#box1::after {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.089), rgba(223, 219, 219, 0.158)) ,url(img/coldplay.png);
+}
+#box2 {
+  top: 250px;
+  left: 50px;
+}
+#nav {
+  margin-right: 40px;
+  margin-top: -15px;
+
+}
+#nav ul li {
+  margin-top: -28px;
+  margin-left: 60px;
+}
+#logo {
+  margin-left: 50px;
+}
+}
+
+@media (max-width: 1030px) {
+  #box1 {
+  position: absolute;
+  left: 10%;
+  }
+  #box2 {
+  font-size: 3em;
+  position: absolute;
+  top: 250px;
+  left: 50px;
+}
+.checkbtn {
+  position: fixed;
+  right: 10px;
+  display: block;
+  z-index: 200;
+}
+#nav a {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 2px;
+}
+#nav ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+#nav {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#nav ul li {
+  margin-left: -20px;
+  margin-top: 25px;
+  padding: 15px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px -4px 8px #000;
+  color: #fff;
+  width: 14%;
+  height: 100vh;
+  background-color: #ddd;
+  text-align: center;
+  position: fixed;
+  right: -100%;
+  top: 20px;
+  transition: all .5s;
+  z-index: 200;
+}
+
+#logo {
+  float: left;
+  margin-left: 50px;
+  margin-top: 8px;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  color:burlywood;
+}
+#check:checked ~ ul {
+  right: 0;
+}
+#about {
+  /* top: 669px; */
+  top: 850px;
+}
+footer {
+  font-size: 12px; 
+}
+}
+
+@media (max-width: 650px) {
+  #box1::after {
+  height: 100%;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.479), rgba(17, 17, 17, 0.705)), url(img/coldplay.png);
+  background-color: rgb(13, 114, 117);
+
+}
+  #box1 {
+  width: 100%;
+  background-size: 100%;
+  left: 0px;  
+  }
+  #box2 {
+  font-size: 2.3em;
+  top: 250px;
+  left: 20px;
+}
+#logo {
+  margin-left: 20px;
+  font-size: 16px;
+}
+#nav {
+  margin-right: 10px;
+}
+
+#nav ul li {
+  margin-top: 55px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100vh;
+  text-align: center;
+  position: fixed;
+  right: -100%;
+  top: 20px;
+  transition: all .5s;
+}
+#about {
+  height: 870px;
+}
+}
+@media ( max-width: 490px) {
+  .stream-icons img {
+  padding: 10px 5px;
+  width: 25px;
+}
+.stream-img img {
+  padding: 5px;
+  width: 65px;
+}
+.coldplay-img{
+  padding-top: 30px;
+}
+.coldplay-img img, .coldplay-img2 img {
+  width: 250px;
+}
+#about {
+  /* height: 70vh; */
+}
+.alb-img img{
+  padding-top: 0px;
+  width: 240px;
+}
+}
+
+.link{
+    color: #6c757d;
+}
+
+p{
+    color: white;
+}
