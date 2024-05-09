@@ -70,7 +70,7 @@ a {
 #box2 {
   width: auto;
   height: auto;
-  color:bisque;
+  color: orangered;
   font-weight: 600;
   font-size: 4.5em;
   position: absolute;
@@ -116,7 +116,7 @@ span {
   float: left;
   margin-left: 40px;
   max-height: 40px;
-  color: blanchedalmond;
+  color:orangered;
 }
 /* #logo img {
   width: 50px;
@@ -295,7 +295,7 @@ background-image: url("images/kendrick.jpg");
   filter: drop-shadow(10px 4px 4px rgb(0, 0, 0));
 }
 footer a {
-  color: rgb(1, 133, 23);
+  color:brown;
 }
 
 /* Responsiveness!!! */
